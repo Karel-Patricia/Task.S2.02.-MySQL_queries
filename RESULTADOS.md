@@ -2,18 +2,18 @@
 
 
 ## 📈 Resumen
-✅ 3 correctas de 6 queries
+✅ 4 correctas de 7 queries
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.52 ms
+⏱ Tiempo: 0.38 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 2: Correcto
 
-⏱ Tiempo: 0.31 ms
+⏱ Tiempo: 0.30 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -48,7 +48,7 @@
 
 ## ✅ Query 4: Correcto
 
-⏱ Tiempo: 0.29 ms
+⏱ Tiempo: 0.30 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -65,11 +65,18 @@
  Disco SSD 1 TB | 150.99 | 166.09
 ```
 
-⏱ Tiempo: 0.30 ms
+⏱ Tiempo: 0.31 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
-## ❌ Query 6: Error
+## ✅ Query 6: Correcto
+
+⏱ Tiempo: 0.29 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ❌ Query 7: Error
 - **Descripción**: 'NoneType' object is not iterable
 
