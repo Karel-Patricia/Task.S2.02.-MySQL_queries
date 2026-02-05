@@ -23,7 +23,11 @@ FROM
 	producto;
 
 -- 6. Llista els noms (nombre) i els preus de tots els productes de la taula producto, convertint els noms a majúscula.
-
+SELECT 
+	UPPER(nombre) AS nombre,
+    precio
+FROM
+	producto;
 
 -- 7. Llista els noms (nombre) i els preus (precio) dels productes de la taula producto, convertint els noms a minúscula.
 
