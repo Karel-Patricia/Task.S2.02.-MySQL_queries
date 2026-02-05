@@ -2,18 +2,18 @@
 
 
 ## 📈 Resumen
-✅ 3 correctas de 5 queries
+✅ 3 correctas de 6 queries
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.50 ms
+⏱ Tiempo: 0.52 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 2: Correcto
 
-⏱ Tiempo: 0.37 ms
+⏱ Tiempo: 0.31 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -53,6 +53,23 @@
 
 ---
 
-## ❌ Query 5: Error
+## ❌ Query 5: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,4 +1,4 @@
+-nom del producte | euros | dòlars
++nombre del producto | euros | dólares
+ Disco duro SATA3 1TB | 86.99 | 95.69
+ Memoria RAM DDR4 8GB | 120.00 | 132.00
+ Disco SSD 1 TB | 150.99 | 166.09
+```
+
+⏱ Tiempo: 0.30 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ❌ Query 6: Error
 - **Descripción**: 'NoneType' object is not iterable
 
