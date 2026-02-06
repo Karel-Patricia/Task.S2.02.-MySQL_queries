@@ -271,7 +271,8 @@ FROM producto
 WHERE codigo_fabricante = (
 	SELECT codigo
     FROM fabricante
-	WHERE nombre = "Lenovo");
+	WHERE nombre = 'Lenovo'
+);
 
 -- 37. Retorna totes les dades dels productes que tenen el mateix preu que el producte més car del fabricant Lenovo. (Sense usar INNER JOIN).
 
