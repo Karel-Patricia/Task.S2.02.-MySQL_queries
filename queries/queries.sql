@@ -296,7 +296,17 @@ WHERE precio = (
 );
 
 -- 38. Llista el nom del producte més car del fabricant Lenovo.
-
+SELECT nombre
+FROM producto
+WHERE precio = (
+	SELECT MAX(precio)
+    FROM producto
+    WHERE codigo_fabricante = (
+		SELECT codigo
+        FROM fabricante
+        WHERE nombre = 'Lenovo'
+	)
+);
 
 -- 39. Llista el nom del producte més barat del fabricant Hewlett-Packard.
 
