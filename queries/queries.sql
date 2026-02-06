@@ -345,7 +345,11 @@ SELECT
     precio,
     codigo_fabricante
 FROM producto
-WHERE precio > (
+WHERE codigo_fabricante = (
+	SELECT codigo
+    FROM fabricante
+    WHERE nombre = 'Asus')
+AND precio > (
 	SELECT AVG(precio)
     FROM producto
     WHERE codigo_fabricante = (
