@@ -309,7 +309,17 @@ WHERE precio = (
 );
 
 -- 39. Llista el nom del producte més barat del fabricant Hewlett-Packard.
-
+SELECT nombre
+FROM producto
+WHERE precio = (
+	SELECT MIN(precio)
+	FROM producto
+	WHERE codigo_fabricante = (
+		SELECT codigo
+        FROM fabricante
+        WHERE nombre = 'Hewlett-Packard'
+	)
+);
 
 -- 40. Retorna tots els productes de la base de dades que tenen un preu major o igual al producte més car del fabricant Lenovo.
 
